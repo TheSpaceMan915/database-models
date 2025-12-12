@@ -1,0 +1,29 @@
+# assignments/05-neo4j-db-creator-app/.gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.build/
+dist/
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+# Virtual envs
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

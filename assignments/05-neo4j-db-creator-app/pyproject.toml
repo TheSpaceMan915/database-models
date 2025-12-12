@@ -1,0 +1,36 @@
+# assignments/05-neo4j-db-creator-app/pyproject.toml
+[tool.poetry]
+name = "neo4j-db-creator-app"
+version = "0.1.0"
+description = "CLI app to create a Neo4j graph (A..F) and run exact-length path queries."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "neo4j_db_creator_app", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+neo4j = ">=5.10"
+typing-extensions = "*"
+python-dotenv = { version = "*", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.0"
+
+[tool.poetry.scripts]
+neo4j-db-creator-app = "neo4j_db_creator_app.cli:main"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.8"]
+build-backend = "poetry.core.masonry.api"

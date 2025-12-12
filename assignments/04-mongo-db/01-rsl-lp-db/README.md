@@ -1,4 +1,3 @@
-// assignments/04-mongo-db/01-rsl-lp-db/README.md
 # RSL Learning Platform — MongoDB 8.0 Database (assignments/04-mongo-db/01-rsl-lp-db)
 
 Production-ready MongoDB 8.0 setup for the RSL (Russian Sign Language) Learning Platform.
